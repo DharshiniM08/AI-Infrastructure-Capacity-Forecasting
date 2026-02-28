@@ -10,7 +10,7 @@ Production-style ML + LLM app that:
 ### Folder structure
 
 ```
-cursor_prjct/
+AI-Infrastructure-Capacity-Forecasting/
   app.py
   hf_api.py
   train.py
