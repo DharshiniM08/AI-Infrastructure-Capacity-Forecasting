@@ -1,0 +1,328 @@
+{
+  "project": "AI Infrastructure Capacity Forecasting",
+  "trained_at_utc": "2026-02-28T06:37:42.999473+00:00",
+  "dataset_path": "data\\dataset.csv",
+  "dataset_rows": 20,
+  "dataset_fingerprint": "6b37fade786ca562",
+  "target": "ticket_category",
+  "labels": [
+    "Anomaly",
+    "General",
+    "Network",
+    "Performance-Memory",
+    "Power"
+  ],
+  "model_results": {
+    "Logistic Regression": {
+      "accuracy": 0.75,
+      "f1_weighted": 0.75,
+      "labels": [
+        "Anomaly",
+        "General",
+        "Network",
+        "Performance-Memory",
+        "Power"
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification_report": {
+        "Anomaly": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "General": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3.0
+        },
+        "Network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Performance-Memory": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "Power": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.75,
+        "macro avg": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1-score": 0.2,
+          "support": 4.0
+        },
+        "weighted avg": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 4.0
+        }
+      },
+      "metric_used_for_selection": "f1_weighted",
+      "label_encoder_classes": [
+        "Anomaly",
+        "General",
+        "Network",
+        "Performance-Memory",
+        "Power"
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.75,
+      "f1_weighted": 0.75,
+      "labels": [
+        "Anomaly",
+        "General",
+        "Network",
+        "Performance-Memory",
+        "Power"
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification_report": {
+        "Anomaly": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "General": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3.0
+        },
+        "Network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Performance-Memory": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "Power": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.75,
+        "macro avg": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1-score": 0.2,
+          "support": 4.0
+        },
+        "weighted avg": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 4.0
+        }
+      },
+      "metric_used_for_selection": "f1_weighted",
+      "label_encoder_classes": [
+        "Anomaly",
+        "General",
+        "Network",
+        "Performance-Memory",
+        "Power"
+      ]
+    }
+  },
+  "best_model": {
+    "name": "Logistic Regression",
+    "accuracy": 0.75,
+    "f1_weighted": 0.75,
+    "insights": {
+      "top_features": [
+        {
+          "feature": "num__anomaly_status",
+          "importance": 0.27060571702638486
+        },
+        {
+          "feature": "num__cpu_mem_ratio",
+          "importance": 0.26826382937452026
+        },
+        {
+          "feature": "num__net_per_exec_time",
+          "importance": 0.2556342013725712
+        },
+        {
+          "feature": "num__execution_time",
+          "importance": 0.24470559067346168
+        },
+        {
+          "feature": "num__network_traffic",
+          "importance": 0.2429273260380433
+        },
+        {
+          "feature": "num__power_consumption",
+          "importance": 0.23014653898042642
+        },
+        {
+          "feature": "cat__vm_id_vm-011",
+          "importance": 0.22757172421679253
+        },
+        {
+          "feature": "num__power_per_instruction",
+          "importance": 0.19129547077145928
+        },
+        {
+          "feature": "num__energy_efficiency",
+          "importance": 0.17912359520998217
+        },
+        {
+          "feature": "num__num_executed_instructions",
+          "importance": 0.1774145087894658
+        },
+        {
+          "feature": "num__ts_dayofweek",
+          "importance": 0.17730125738419925
+        },
+        {
+          "feature": "num__memory_usage",
+          "importance": 0.15311593324741482
+        },
+        {
+          "feature": "cat__task_type_training",
+          "importance": 0.15303747663004136
+        },
+        {
+          "feature": "cat__task_type_streaming",
+          "importance": 0.14034417702152743
+        },
+        {
+          "feature": "num__cpu_usage",
+          "importance": 0.12740114964846525
+        },
+        {
+          "feature": "num__ts_hour",
+          "importance": 0.12300875766743839
+        },
+        {
+          "feature": "cat__task_priority_high",
+          "importance": 0.1093556481246464
+        },
+        {
+          "feature": "cat__task_priority_medium",
+          "importance": 0.09842355474753912
+        },
+        {
+          "feature": "cat__vm_id_vm-014",
+          "importance": 0.08920664397017454
+        },
+        {
+          "feature": "cat__task_status_running",
+          "importance": 0.08195040768570072
+        },
+        {
+          "feature": "txt__240",
+          "importance": 0.0784122955389549
+        },
+        {
+          "feature": "cat__task_type_inference",
+          "importance": 0.06339750448026317
+        },
+        {
+          "feature": "cat__task_type_batch",
+          "importance": 0.052153061716744074
+        },
+        {
+          "feature": "cat__task_status_failed",
+          "importance": 0.04973749329338847
+        },
+        {
+          "feature": "cat__vm_id_vm-007",
+          "importance": 0.04973749329338847
+        }
+      ]
+    }
+  }
+}
